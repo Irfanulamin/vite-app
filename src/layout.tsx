@@ -1,12 +1,13 @@
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./components/ui/sheet";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { name: "বোনাসের এর নিয়মাবলি", path: "/" },
+    { name: "বোনাসের এর নিয়মাবলি", path: "/bonus-rule" },
     { name: "ওয়ালেট এজেন্ট এর নিয়মাবলি", path: "/" },
     { name: "প্রধান এজেন্ট এর নিয়মাবলি", path: "/" },
     { name: "কুইজ", path: "/" },
@@ -73,7 +74,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
       {/* ✅ MAIN CONTENT */}
       <main className="bg-[#343333] text-[#FDDD04] min-h-screen">
-        {children}
+        <Outlet />
       </main>
 
       {/* ✅ FOOTER */}
