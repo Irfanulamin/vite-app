@@ -8,8 +8,8 @@ export function Layout() {
 
   const navItems = [
     { name: "বোনাসের এর নিয়মাবলি", path: "/bonus-rule" },
-    { name: "ওয়ালেট এজেন্ট এর নিয়মাবলি", path: "/" },
-    { name: "প্রধান এজেন্ট এর নিয়মাবলি", path: "/" },
+    { name: "ওয়ালেট এজেন্ট এর নিয়মাবলি", path: "/wallet-agent-rule" },
+    { name: "প্রধান এজেন্ট এর নিয়মাবলি", path: "/main-agent-rule" },
     { name: "কুইজ", path: "/" },
     { name: "ভিডিও", path: "/" },
   ];
